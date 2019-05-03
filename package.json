@@ -3,7 +3,7 @@
 	"displayName": "search compare",
 	"publisher": "kutear",
 	"description": "a simple plugin for vscode, just like the command ctrl+f (cmd+f) in vscode, but open a side editor to preview the content of search, and bind editors synchronous scrolling.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"repository": "https://github.com/Kutear/vscode-plugin-search-compare",
 	"engines": {
 		"vscode": "^1.33.0"
