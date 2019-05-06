@@ -36,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
     };
 
     const textEditorScrollEventListener = (event: vscode.TextEditorVisibleRangesChangeEvent) => {
-        if (event.textEditor.document.uri.scheme !== scheme) {
+        if (event.textEditor.document.uri.scheme === scheme) {
             syncSideSearchComparePanel(event.textEditor, event.visibleRanges);
         }
     };
@@ -82,7 +82,7 @@ export function activate(context: vscode.ExtensionContext) {
                 console.log("input nothing");
             }
         } else {
-            console.log("no file is active");
+            vscode.window.showErrorMessage(`no file open or file is too large (more than 50M)`);
         }
     });
 
